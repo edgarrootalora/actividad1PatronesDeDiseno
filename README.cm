@@ -68,3 +68,8 @@ El resultado de la aplicación de este patrón cumplió los beneficios esperados
 - Flexibilidad en tiempo de ejecución: se puede gestionar las plataformas y las notificaciones de manera sencilla.
 
 ## Justificación ejercicio 3
+
+El caso del escenario 3, puntualmente, se realizó la solución aplicando un patrón de diseño mediator, este patrón permite 
+poca dependencias entre los objetos, que según el problema, se queria evitar la cohesión entre los actores, en el caso de usuarios y el chat.
+Todo se centraliza en el mediador, que como su nombre lo indica, permite centralizar los métodos para realizar las funcionalidades y lógica del problema.
+
