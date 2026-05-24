@@ -1,0 +1,57 @@
+#Actividad 1 - Patrones de diseño
+
+##Autores
+- Beycy Yuliet Rojas Acero
+- Jhon Alexander Tenjo Romero
+- Richard Jose Niño Martinez
+- Edgar Andrés Romero Otálora
+
+##Tecnologías
+
+- Java
+- IntelliJ IDEA
+
+##Estructura del proyecto
+
+El código de cada uno de los tres ejercicios se encuentra en un paquete de la 
+ruta /src/main/java/co/edu/unisabana/ y cada uno maneja un main independiente.
+
+1. El ejercicio 1 esta en el paquete "ejercicio1Automovil"
+2. El ejercicio 2 esta en el paquete "ejercicio2Notificaciones"
+3. El ejercicio 3 esta en el paquete "ejercicio3Chat"
+
+
+## Ejecución
+
+1. Clonar o descargar el repositorio
+2. Abrir IntelliJ IDEA
+3. Seleccionar **Open Project**
+4. Elegir la carpeta `actividad1` descargada del repositorio
+5. Esperar a que IntelliJ cargue el proyecto
+6. Ejecutar la clase `Main` de cada uno de los ejercicios
+
+## Justificación ejercicio 1
+
+## Justificación ejercicio 2
+
+Para el ejercicio 2, se identificó que la aplicación tiene dos módulos principales que son Plataformas y Notificaciones, 
+que interactúan entre sí. Y el problema plantea que si uso herencia tradicional que maneje clases de tipo 
+NotificacionMensajeWeb, NotificacionAlertaWeb habría una explosión de subclases difíciles de mantener.
+
+Este problema requiere que se implemente un patrón de diseño estructural, ya que permite modificar la estructura 
+que en el problema es herencia tradicional, a una estructura que permita adicionar Plataformas y Notificaciones 
+sin que afecte su funcionamiento.
+
+El patrón de diseño estructural más adecuado es el Bridge. Porque, como lo menciona la página refactoring.guru, 
+permite que un grupo de clases estrechamente relacionadas se divida en dos jerarquías separadas que pueden 
+desarrollarse de manera independiente la una de la otra, en este caso Plataforma y Notificación.
+
+El resultado de la aplicación de este patrón cumplió los beneficios esperados, ya que:
+
+- Hizo separación de responsabilidades.
+- Escalabilidad: permite agregar nuevas plataformas y notificaciones de forma independiente sin afectar al otro.
+- Reducción de clases: en el ejemplo se tenían 3 plataformas y 4 notificaciones; si se implementaba con herencia serían 
+    12 clases, con el patrón de diseño solo se requieren 7 clases.
+- Flexibilidad en tiempo de ejecución: se puede gestionar las plataformas y las notificaciones de manera sencilla.
+
+## Justificación ejercicio 3
