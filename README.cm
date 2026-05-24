@@ -32,6 +32,19 @@ ruta /src/main/java/co/edu/unisabana/ y cada uno maneja un main independiente.
 
 ## Justificación ejercicio 1
 
+El patrón seleccionado es Builder, un patrón creacional, porque el problema consiste en construir objetos complejos con 
+muchas configuraciones opcionales, como motor, color, llantas, sistema de sonido y GPS.
+
+Usar constructores tradicionales generaría constructores muy largos o múltiples versiones sobrecargadas, dificultando 
+la lectura y mantenimiento del código. El patrón Builder soluciona esto permitiendo construir el objeto paso a paso mediante 
+métodos específicos para cada configuración.
+
+Además, este patrón mejora la flexibilidad, ya que permite crear distintos tipos de automóviles reutilizando el mismo 
+proceso de construcción, como autos deportivos o de lujo, sin modificar la clase principal.
+
+También facilita el mantenimiento y la escalabilidad, porque si se agregan nuevas características al automóvil, solo sería 
+necesario añadir nuevos métodos al builder sin afectar el resto del sistema.
+
 ## Justificación ejercicio 2
 
 Para el ejercicio 2, se identificó que la aplicación tiene dos módulos principales que son Plataformas y Notificaciones, 
